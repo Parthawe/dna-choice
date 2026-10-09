@@ -42,3 +42,7 @@ The interface uses labeled native radio buttons, keyboard gallery tabs, native d
 Scientific context links to the National Institute on Aging’s [healthspan discussion](https://www.nia.nih.gov/news/live-long-good-health-could-calorie-restriction-mimetics-hold-key), [Interventions Testing Program](https://www.nia.nih.gov/research/dab/interventions-testing-program-itp/about-itp), and [Division of Aging Biology](https://www.nia.nih.gov/research/dab). The context distinguishes research in mice from evidence for the fictional human promise.
 
 Original artifact photography and the DNA concept belong to Parth Pawar. The exhibit preserves the original photographs and adds new interface copy and scenarios. Instrument Sans is hosted locally under the [SIL Open Font License](dist/assets/InstrumentSans-OFL.txt). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). No blanket license is granted for the project’s code or photography.
+
+## Design-system foundation
+
+Open `design-system.html` to explore the bright gallery direction, an interactive opening preview, reusable choice controls, inspection sheet, color/type/spacing tokens, motion, and image states. The selected system is documented in [DESIGN.md](DESIGN.md); its shared CSS and radio renderer are in `dist/system/`. The full exhibit migration follows this foundation.

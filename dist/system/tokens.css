@@ -1,0 +1,12 @@
+@font-face{font-family:Archivo;src:url('../assets/archivo-variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+:root{
+  --dna-wall:#f5f4f0;--dna-sheet:#eae9e3;--dna-ink:#212524;--dna-muted:#616760;--dna-line:#c8cbc2;
+  --dna-life:#25516d;--dna-life-wash:#e0e9ee;--dna-end:#7d4038;--dna-end-wash:#efe2df;--dna-focus:#175c8a;
+  --dna-font:Archivo,Arial,sans-serif;--dna-type-display:clamp(3rem,6.5vw,6rem);--dna-type-heading:clamp(2rem,3.8vw,3.75rem);
+  --dna-type-body:1rem;--dna-type-label:.75rem;--dna-tracking-display:-.035em;
+  --dna-space-1:.25rem;--dna-space-2:.5rem;--dna-space-3:.75rem;--dna-space-4:1rem;--dna-space-6:1.5rem;
+  --dna-space-10:2.5rem;--dna-space-16:4rem;--dna-space-24:6rem;
+  --dna-control-radius:2px;--dna-sheet-radius:0px;--dna-focus-width:2px;
+  --dna-time-feedback:120ms;--dna-time-reveal:360ms;--dna-ease-out:cubic-bezier(.16,1,.3,1);
+  color-scheme:light;
+}
