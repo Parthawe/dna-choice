@@ -24,8 +24,8 @@ Five original artifact photographs are in dist/assets. The original project is h
 
 ## Current Scope
 
-Build an executable design system and an immersive opening-screen preview. Establish shared tokens, reusable controls, artifact inspection, reflection, motion, loading/error states, and responsive rules before migrating the full exhibit.
+Apply the bright gallery system to the complete exhibit. Shared choice controls, photography, reversible progress navigation, reflections, private notes, matrix revisions, and exports form one experience.
 
 ## Open Decisions
 
-The broader audience and distribution strategy have not been specified. The full experience migration follows the system foundation.
+The broader audience and distribution strategy have not been specified.

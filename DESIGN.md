@@ -1,6 +1,6 @@
 # DNA design system
 
-The chosen direction is a bright, tactile gallery. This system currently powers `dist/design-system.html`, including its interactive opening preview. The full six-situation exhibit will migrate in a later pass.
+The chosen direction is a bright, tactile gallery. This system powers the full six-decision exhibit in `dist/index.html` and the interactive component reference in `dist/design-system.html`.
 
 ## Visual foundation
 
@@ -38,7 +38,7 @@ Spacing uses 4, 8, 12, 16, 24, 40, 64, and 96px steps. Control corners are 2px; 
 | `.dna-reflection` | Question revealed after a choice; text remains accessible when animation is unavailable. |
 | `.dna-sheet` | Native dialog for protected artifact inspection. Escape closes it and returns focus. Horizontal gallery tabs support arrows, Home, and End. |
 | `.dna-progress` | Six small marks with a named situation and readable position. Position does not imply completed answers. |
-| `.dna-matrix` | Neutral comparison table. The reference mirrors the actual opening answer; five remaining rows stay unanswered. Narrow screens have a labeled horizontal scroll region. |
+| `.dna-matrix` | Neutral comparison table. The full exhibit shows actual answers and differences from the initial decision; the reference mirrors its opening answer with five remaining rows unanswered. Narrow screens have a labeled horizontal scroll region. |
 | `.dna-notes` | Optional native textarea with a 500-character limit, visible counter, clear action, and page-memory lifetime. |
 | `.dna-status` | Plain state copy. Media failures explain the problem and provide a retry action. |
 
@@ -56,7 +56,7 @@ group.set(null);
 group.disable(true);
 ```
 
-Each group needs a unique name. Do not assign different values to visual and model state. The opening and component reference use the same renderer.
+Each group needs a unique name. Do not assign different values to visual and model state. The full exhibit, opening preview, and component reference use the same renderer.
 
 ## Motion and states
 
@@ -69,3 +69,12 @@ The reference page demonstrates ready, selected, disabled, loading, error, recov
 At 700px and below, the artifact follows the question and precedes the controls. Choices stack, sections become a single reading column, and inspection tabs can scroll. At 320px, labels wrap rather than overflow. Keyboard focus stays distinct from selection. Use the shared authored SVG symbols for arrow, close, check, and expand controls.
 
 Color contrast is verified for ink, secondary text, both choice colors, and focus against the wall and sheet. Artifact captions sit on a solid wall-colored surface. Image alt text names the original objects. The opening answer and preview state changes are held in page memory; no submission or browser storage is introduced.
+
+
+## Exhibit composition and navigation
+
+The opening places the two original boxes at gallery scale beside the question, with three equal choices beneath. On mobile, the photograph follows the question and precedes choices. Photographic whitespace blends into the gallery wall; inspection retains complete original images.
+
+Each subsequent situation names the changed assumption, shows the initial answer, and explicitly resets other conditions to the original offer. The selected answer reveals a reflection and a written comparison with the initial decision. Six progress controls distinguish the current position from answered positions and allow return to reached situations. Unanswered future situations are disabled. Browser back and forward preserve in-memory decisions and revision behavior.
+
+The complete record uses a comparison table on desktop and equivalent readable rows on mobile. Revise controls retain all other answers and notes. Metrics remain below the decisions. Printed and text records include the actual decisions and private notes. The main stylesheet consumes shared system tokens and components and adds only exhibit composition, dialog layout, responsive rows, and print rules.
