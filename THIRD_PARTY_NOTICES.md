@@ -7,3 +7,8 @@ Instrument Sans Regular is distributed unchanged from the Instrument Sans projec
 General Sans, used by an earlier private version of this exhibit, is not included in this public release. The public repository starts from this release snapshot rather than the private Site’s earlier source history.
 
 Archivo variable is distributed unchanged from the Google Fonts Archivo directory, https://github.com/google/fonts/tree/main/ofl/archivo. Copyright 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo). It is licensed under the SIL Open Font License, Version 1.1. The complete license is in `dist/assets/Archivo-OFL.txt`.
+
+
+## Fictional scene imagery
+
+`dist/assets/scene-relationships.webp`, `scene-health.webp`, `scene-access.webp`, `scene-dependence.webp`, and `scene-evidence.webp` were generated with the built-in imagegen tool for this exhibit. They depict fictional settings and are labeled as generated in the interface. They are separate from Parth Pawar’s original artifact photography. Prompts are recorded in `SCENE_ASSETS.md`.

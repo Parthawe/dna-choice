@@ -46,3 +46,10 @@ Original artifact photography and the DNA concept belong to Parth Pawar. The exh
 ## Design-system foundation
 
 Open `design-system.html` to explore the bright gallery direction, an interactive opening preview, reusable choice controls, inspection sheet, color/type/spacing tokens, motion, and image states. The selected system is documented in [DESIGN.md](DESIGN.md); its shared CSS and radio renderer are in `dist/system/`. The full exhibit uses these same tokens and choice controls, with reached-situation navigation, initial-answer context, reflections, and responsive matrix rows.
+
+
+## Immersive scenes
+
+The five situations now unfold through fictional settings and optional interactions: read a loved one’s note, look further along a path, inspect two appointments, make room for ongoing treatment while packing, and compare a promise with human evidence. Exploration does not select an answer, affect counts, or block continuing. Its state stays in page memory and resets with the exhibit.
+
+The generated images are labeled in the interface. Their final prompts and saved asset paths are in [SCENE_ASSETS.md](SCENE_ASSETS.md). Original artifact photographs remain available in the inspection gallery.

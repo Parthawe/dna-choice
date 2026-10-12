@@ -1,0 +1,42 @@
+/* Scene views inherit the gallery system. The photograph leads; paper carries readable dialogue. */
+#simulation:not([data-scene=offer]) .scene-grid{display:flex;flex-direction:column;gap:0;padding-top:12px}
+#simulation:not([data-scene=offer]) .scene-copy{display:grid;grid-template-columns:1fr 1fr;gap:12px 8%;padding-top:0;align-items:center}
+#simulation:not([data-scene=offer]) h1{font-size:clamp(40px,4.7vw,68px);max-width:11em}
+#simulation:not([data-scene=offer]) .story{font-size:16px;line-height:1.65;max-width:520px;margin:0}
+#simulation:not([data-scene=offer]) .fiction{grid-column:1/-1;font-size:11px;max-width:none;margin:0 0 20px}
+#simulation:not([data-scene=offer]) .specimen{display:none}
+#simulation:not([data-scene=offer]) .scene-display{margin-top:0}
+#simulation:not([data-scene=offer]) .condition{grid-template-columns:180px 1fr;margin-top:0;padding-top:20px;border-top:0}
+#simulation:not([data-scene=offer]) .condition>div{display:grid;grid-template-columns:1.25fr 1fr;gap:8px 6%}
+#simulation:not([data-scene=offer]) #baseline-answer{margin:0;color:var(--dna-ink)}
+#simulation:not([data-scene=offer]) #independence-note{margin:0;grid-column:1/-1}
+#simulation:not([data-scene=offer]) .scene-decision{margin-top:28px}
+.scene-theater{position:relative;isolation:isolate;min-height:410px;background:var(--dna-sheet);overflow:hidden;display:flex;align-items:flex-start;padding:24px 24px 56px}
+.theater-photo{position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;object-position:center 62%;transition:object-position 480ms var(--dna-ease-out)}
+.scene-theater[data-kind=horizon] .theater-photo{object-position:center 60%}
+.scene-theater[data-kind=horizon][data-explored='2'] .theater-photo{object-position:center 40%}
+.scene-theater[data-kind=appointment] .theater-photo{object-position:center 48%}
+.scene-theater[data-kind=evidence] .theater-photo{object-position:center 65%}
+.theater-content{background:var(--dna-wall);width:min(390px,40%);padding:24px;align-self:flex-start;position:relative;z-index:1}
+.theater-premise{font-size:20px;line-height:1.35;letter-spacing:-.02em;margin:0 0 18px}
+.theater-controls{display:flex;gap:12px;flex-wrap:wrap}
+.scene-action{font-size:12px;line-height:1.4;min-height:44px;border:1px solid var(--dna-line);border-radius:var(--dna-control-radius);padding:10px 14px;max-width:100%;text-align:left;background:var(--dna-wall)}
+.scene-action:hover{border-color:var(--dna-ink);background:var(--dna-sheet)}
+.scene-action[aria-pressed=true]{color:var(--dna-wall);background:var(--dna-ink);border-color:var(--dna-ink)}
+.theater-beat{font-size:15px;line-height:1.7;margin-top:20px}
+.theater-caption{display:flex;justify-content:space-between;gap:20px;position:absolute;bottom:0;left:0;right:0;background:var(--dna-wall);padding:14px 0 0;font-size:11px;color:var(--dna-muted)}
+.theater-media-status{position:absolute;inset:0;z-index:2;background:var(--dna-sheet);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:28px;font-size:14px;text-align:center}
+.theater-media-status:not([hidden])~.theater-content{z-index:3}.theater-media-status:not([hidden]){padding-left:45%}
+.horizon-label{font-size:12px;margin-bottom:4px;width:100%}
+.theater-controls input[type=range]{width:100%;min-height:44px;accent-color:var(--dna-life);margin:0;cursor:pointer}
+.horizon-stages{display:flex;justify-content:space-between;gap:12px;width:100%;font-size:11px;color:var(--dna-muted)}
+.scene-decision-question{font-size:clamp(19px,2.2vw,27px);line-height:1.3;letter-spacing:-.02em;margin-bottom:24px;max-width:800px}
+@media(min-width:1600px){.scene-theater{min-height:500px}.theater-content{width:430px;padding:30px}.theater-premise{font-size:24px}.theater-beat{font-size:16px}}
+@media(max-width:1000px){.theater-content{width:43%;padding:20px}.theater-premise{font-size:18px}.theater-beat{font-size:14px}.scene-action{font-size:11px;padding:10px}.scene-theater{min-height:400px}#simulation:not([data-scene=offer]) .condition>div{grid-template-columns:1fr;gap:8px}}
+@media(max-width:700px){#simulation:not([data-scene=offer]) .scene-copy{display:block}#simulation:not([data-scene=offer]) h1{font-size:clamp(36px,10vw,50px)}#simulation:not([data-scene=offer]) .story{font-size:15px;margin-top:18px}#simulation:not([data-scene=offer]) .fiction{font-size:10px;margin:14px 0 22px;line-height:1.6}.scene-theater{padding:0;display:flex;flex-direction:column;min-height:0;overflow:visible;background:var(--dna-wall)}.theater-photo{position:relative;inset:auto;z-index:0;height:260px;object-position:70% center;transition:none}.scene-theater[data-kind=horizon] .theater-photo{object-position:75% center}.scene-theater[data-kind=horizon][data-explored='2'] .theater-photo{object-position:75% 40%}.scene-theater[data-kind=appointment] .theater-photo{object-position:center}.theater-content{width:100%;padding:20px 0 16px;order:2;border-bottom:1px solid var(--dna-line)}.theater-premise{font-size:19px;max-width:330px;margin-bottom:16px}.theater-controls{gap:10px}.scene-action{font-size:12px;padding:10px 14px}.theater-beat{font-size:15px;line-height:1.65;margin-top:18px;max-width:480px}.theater-caption{position:static;order:1;font-size:10px;line-height:1.5;padding:12px 0 0;gap:16px}.theater-media-status{inset:0 0 auto;height:260px;padding:20px!important;z-index:2!important;font-size:12px}.horizon-stages{font-size:10px}.scene-decision-question{font-size:23px;margin-bottom:20px}#simulation:not([data-scene=offer]) .condition{display:block;padding-top:18px}#simulation:not([data-scene=offer]) .condition>span{font-size:11px;margin-bottom:10px}#simulation:not([data-scene=offer]) .condition>div{display:block}#simulation:not([data-scene=offer]) #baseline-answer{margin-top:10px}#simulation:not([data-scene=offer]) #independence-note{margin-top:8px}#simulation:not([data-scene=offer]) .scene-decision{margin-top:26px}}
+@media(max-width:360px){.theater-photo{height:220px}.theater-caption{display:block}.theater-caption>span{display:block}.theater-caption>span+span{margin-top:4px}.theater-media-status{height:220px}.scene-action{font-size:11px;padding:10px 12px}.theater-premise{font-size:18px}.scene-decision-question{font-size:21px}}
+@media(prefers-reduced-motion:reduce){.theater-photo{transition:none}}
+
+.packing-state{position:absolute;right:24px;bottom:65px;background:var(--dna-wall);padding:10px 14px;color:var(--dna-ink);font-size:12px;line-height:1.5;border:1px solid var(--dna-line)}
+@media(max-width:700px){.packing-state{top:205px;bottom:auto;right:12px;font-size:10px;padding:8px 10px}}
+@media(max-width:360px){.packing-state{top:170px}}

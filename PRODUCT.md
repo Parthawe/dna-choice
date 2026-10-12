@@ -20,11 +20,11 @@ The user chose a bright gallery that feels tactile and immersive. Physical objec
 
 ## Evidence on Hand
 
-Five original artifact photographs are in dist/assets. The original project is https://designwhich.works/dna-speculative/. Scientific context links to the National Institute on Aging. No audience statistics or personality scores are available or intended.
+Five original artifact photographs are in dist/assets. Five generated setting images are explicitly labeled as fictional scene imagery. The original project is https://designwhich.works/dna-speculative/. Scientific context links to the National Institute on Aging. No audience statistics or personality scores are available or intended.
 
 ## Current Scope
 
-Apply the bright gallery system to the complete exhibit. Shared choice controls, photography, reversible progress navigation, reflections, private notes, matrix revisions, and exports form one experience.
+Apply the bright gallery system to the complete exhibit. The five conditions unfold as fictional everyday scenes with optional exploration. Shared choice controls, reversible progress navigation, reflections, private notes, matrix revisions, and exports form one experience.
 
 ## Open Decisions
 

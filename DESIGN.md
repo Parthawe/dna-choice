@@ -78,3 +78,14 @@ The opening places the two original boxes at gallery scale beside the question, 
 Each subsequent situation names the changed assumption, shows the initial answer, and explicitly resets other conditions to the original offer. The selected answer reveals a reflection and a written comparison with the initial decision. Six progress controls distinguish the current position from answered positions and allow return to reached situations. Unanswered future situations are disabled. Browser back and forward preserve in-memory decisions and revision behavior.
 
 The complete record uses a comparison table on desktop and equivalent readable rows on mobile. Revise controls retain all other answers and notes. Metrics remain below the decisions. Printed and text records include the actual decisions and private notes. The main stylesheet consumes shared system tokens and components and adds only exhibit composition, dialog layout, responsive rows, and print rules.
+
+
+## Immersive situations
+
+The five conditions use distinct first-person everyday settings: a note at breakfast, a familiar park path, a clinic waiting room, packing for a trip, and a reading-room evidence folder. Each combines a short scene introduction, generated setting image, and an optional interaction. Scene images have visible generated/fictional attribution and never replace the original artifacts in inspection.
+
+`scene-stories.mjs` holds authored narrative content. `scene-theater.mjs` renders conversation and appointment buttons, a native three-position path slider, a reversible packing control, and evidence sections. These interactions change only the explored passage, never the answer or metrics. Exploration is remembered in page memory while revisiting scenes and cleared on restart. Decisions remain immediately available without mandatory reveals or delays.
+
+The scene fills the gallery width. Desktop passages sit on a solid wall-colored paper surface within the image; mobile places the same passage beneath the image so photographs and controls remain legible. Actual image loading, error, and retry states leave the narrative and decision available. Letter and evidence passages open with a bounded clip reveal after an explicit action; reduced motion disables it. No sound, autoplay sequence, or looping motion is introduced.
+
+Exported records include each narrative premise and the unchanged independent assumption. They do not claim the visitor completed an optional exploration action.
