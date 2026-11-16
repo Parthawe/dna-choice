@@ -52,4 +52,9 @@ Open `design-system.html` to explore the bright gallery direction, an interactiv
 
 The five situations now unfold through fictional settings and optional interactions: read a loved one’s note, look further along a path, inspect two appointments, make room for ongoing treatment while packing, and compare a promise with human evidence. Exploration does not select an answer, affect counts, or block continuing. Its state stays in page memory and resets with the exhibit.
 
-The generated images are labeled in the interface. Their final prompts and saved asset paths are in [SCENE_ASSETS.md](SCENE_ASSETS.md). Original artifact photographs remain available in the inspection gallery.
+Original artifact photographs are available in the inspection gallery.
+
+
+## The opening spread
+
+The two selectable graphics use photographic cutouts of the original DNA cartons. The blue box extends life; the red box accepts a natural lifespan. The five follow-up scenes use browser-drawn printed objects that respond to exploration. The generated imagery documented in SCENE_ASSETS.md belonged to an earlier version.

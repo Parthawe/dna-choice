@@ -16,15 +16,15 @@ The approved experience has six decisions, reversible navigation, optional scien
 
 ## Brand Commitments
 
-The user chose a bright gallery that feels tactile and immersive. Physical objects lead; interface controls recede. Earlier references were Cursor and Paper for premium precision. The user rejected the first implementation as a poor experience and asked to build the design system first.
+The user chose a bright gallery that feels tactile and immersive. Physical objects lead; interface controls recede. The opening draws on the two-color decision in The Matrix and on contemporary fashion editorials. Earlier references were Cursor and Paper for premium precision. The user rejected the first implementation as a poor experience and asked to build the design system first.
 
 ## Evidence on Hand
 
-Five original artifact photographs are in dist/assets. Five generated setting images are explicitly labeled as fictional scene imagery. The original project is https://designwhich.works/dna-speculative/. Scientific context links to the National Institute on Aging. No audience statistics or personality scores are available or intended.
+Five original artifact photographs are in dist/assets. The five follow-up situations use authored, browser-drawn exhibit objects. The original project is https://designwhich.works/dna-speculative/. Scientific context links to the National Institute on Aging. No audience statistics or personality scores are available or intended.
 
 ## Current Scope
 
-Apply the bright gallery system to the complete exhibit. The five conditions unfold as fictional everyday scenes with optional exploration. Shared choice controls, reversible progress navigation, reflections, private notes, matrix revisions, and exports form one experience.
+Apply the bright gallery system to the complete exhibit. The five conditions unfold through fictional scenes and objects with optional exploration. Shared choice controls, reversible progress navigation, reflections, private notes, matrix revisions, and exports form one experience.
 
 ## Open Decisions
 

@@ -1,6 +1,6 @@
-# Generated scene assets
+# Archived generated scene assets
 
-These five images were created with the built-in imagegen tool for fictional exhibit scenes. They are labeled as generated in the interface. Original DNA photography remains separate and unchanged.
+These five images were created with the built-in imagegen tool for fictional exhibit scenes. They were used in an earlier release. The current exhibit uses browser-drawn objects. The original generated files are retained in the repository history, at the paths below. Original DNA photography remains separate and unchanged.
 
 ## relationships
 

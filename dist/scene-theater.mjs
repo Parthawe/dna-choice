@@ -1,3 +1,4 @@
+import {exhibitObject} from './exhibit-objects.mjs';
 import {narrativeFor} from './scene-stories.mjs';
 /** Optional scene exploration. Independent of decisions and private notes. */
 export function createSceneTheater(host,{onAnnounce=()=>{}}={}){
@@ -7,11 +8,6 @@ export function createSceneTheater(host,{onAnnounce=()=>{}}={}){
   const scene=narrativeFor(id);active=id;host.replaceChildren();host.hidden=!scene;if(!scene)return;
   host.dataset.kind=scene.kind;delete host.dataset.explored;
   const figure=make('figure','theater-figure');const frame=make('div','theater-frame');
-  const photo=make('img','theater-photo');photo.alt=scene.alt;photo.src=`assets/${scene.image}`;photo.width=1536;photo.height=1024;
-  const status=make('div','theater-media-status');status.setAttribute('role','status');status.textContent='Loading the scene…';
-  const retry=make('button','dna-button dna-button--quiet','Retry scene image');retry.type='button';retry.hidden=true;
-  status.append(retry);retry.addEventListener('click',()=>{retry.hidden=true;status.firstChild.textContent='Loading the scene…';photo.src=`assets/${scene.image}?retry=${Date.now()}`;});
-  photo.addEventListener('load',()=>{status.hidden=true;});photo.addEventListener('error',()=>{status.hidden=false;status.firstChild.textContent='The scene image could not load. You can still explore and choose.';retry.hidden=false;});
   const content=make('div','theater-content');const premise=make('h2','theater-premise',scene.prompt);const controls=make('div','theater-controls');controls.setAttribute('role','group');controls.setAttribute('aria-label',`Explore ${scene.setting.toLowerCase()}`);
   const beat=make('p','theater-beat');beat.id='theater-beat';beat.setAttribute('role','status');beat.setAttribute('aria-live','polite');
   const buttons=[];const packingTag=make('span','packing-state','Treatment supplies packed');packingTag.hidden=true;
@@ -26,12 +22,11 @@ export function createSceneTheater(host,{onAnnounce=()=>{}}={}){
   }
   content.append(premise,controls,beat);
   const caption=make('figcaption','theater-caption');
-  caption.append(make('span','theater-setting',scene.setting),make('span','','Fictional scene · Generated image'));
+  caption.append(make('span','theater-setting',scene.setting),make('span','','Fictional exhibit object'));
   if(scene.kind==='packing')content.append(packingTag);
-  frame.append(photo,status);
+  frame.append(exhibitObject(scene.kind));
   figure.append(frame,caption);
   host.append(figure,content);
-  if(photo.complete&&photo.naturalWidth)status.hidden=true;
  }
  return {render,reset(){explored.clear();host.replaceChildren();host.hidden=true;active=null;},getState(){return active?{scene:active,explored:explored.has(active)}:null;}};
 }

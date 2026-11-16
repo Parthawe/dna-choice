@@ -4,7 +4,7 @@ The chosen direction is a bright, tactile gallery. This system powers the full s
 
 ## Visual foundation
 
-Original photographic objects occupy the scene. The opening uses a large, unframed photograph, bold Archivo type, and a shared horizontal choice group. The photographic background blends into the wall; the actual artifact colors and printed wording remain intact. Detailed inspection shows the complete original photograph.
+Original photographic objects occupy the scene. The opening sets two large editorial plates in the gallery. Each uses a hand-traced photographic cutout of an original carton on a flat field of color. The original print and folds remain visible, and detailed inspection shows the complete photograph.
 
 The original DNA wordmark retains its serif treatment. Archivo is locally hosted, under the SIL Open Font License. Display type uses weight 600, a 1.02 line height, and tracking of -0.035em. Reading text uses normal weight and generous line height. Typography contracts at narrow widths rather than clipping.
 
@@ -73,21 +73,17 @@ Color contrast is verified for ink, secondary text, both choice colors, and focu
 
 ## Exhibit composition and navigation
 
-The opening places the two original boxes at gallery scale beside the question, with three equal choices beneath. On mobile, the photograph follows the question and precedes choices. Photographic whitespace blends into the gallery wall; inspection retains complete original images.
+The original offer uses two equal, selectable graphic plates. Blue takes the extra years. Red accepts a natural lifespan. “I’m undecided” is a separate, quieter control below the pair; it remains part of the decision record. Selecting a plate records a reversible answer; continuing is a separate action. The plates remain side by side on phones.
 
 Each subsequent situation names the changed assumption, shows the initial answer, and explicitly resets other conditions to the original offer. The selected answer reveals a reflection and a written comparison with the initial decision. Six progress controls distinguish the current position from answered positions and allow return to reached situations. Unanswered future situations are disabled. Browser back and forward preserve in-memory decisions and revision behavior.
 
 The complete record uses a comparison table on desktop and equivalent readable rows on mobile. Revise controls retain all other answers and notes. Metrics remain below the decisions. Printed and text records include the actual decisions and private notes. The main stylesheet consumes shared system tokens and components and adds only exhibit composition, dialog layout, responsive rows, and print rules.
 
 
-## Immersive situations
+## Printed objects in the five situations
 
-The five conditions use distinct first-person everyday settings: a note at breakfast, a familiar park path, a clinic waiting room, packing for a trip, and a reading-room evidence folder. Each combines a short scene introduction, generated setting image, and an optional interaction. Scene images have visible generated/fictional attribution and never replace the original artifacts in inspection.
+Five browser-drawn objects replace the earlier generated backdrops: a note in an envelope, a route diagram, two appointment slips, a packing card, and an evidence index. The objects respond to the existing exploration controls. The surrounding column carries the readable story and selected passage. Optional exploration still never changes an answer. On smaller screens the object and its controls stack, and “Go to the decision” reaches the changed condition without choosing.
 
-`scene-stories.mjs` holds authored narrative content. `scene-theater.mjs` renders conversation and appointment buttons, a native three-position path slider, a reversible packing control, and evidence sections. These interactions change only the explored passage, never the answer or metrics. Exploration is remembered in page memory while revisiting scenes and cleared on restart. Decisions remain immediately available without mandatory reveals or delays.
+### Design references
 
-Each scene uses an uninterrupted 3:2 photograph. On desktop, the prompt, controls, and selected passage sit in a reading column beside the image. On smaller screens, they follow the photograph and its caption. “Go to the decision” bypasses exploration, scrolls to the changed condition, and moves keyboard focus to the decision question without selecting an answer or changing history. Actual image loading, error, and retry states leave the narrative and decision available. Letter and evidence passages open with a bounded clip reveal after an explicit action; reduced motion disables it. No sound, autoplay sequence, or looping motion is introduced.
-
-Exported records include each narrative premise and the unchanged independent assumption. They do not claim the visitor completed an optional exploration action.
-
-This refinement borrows [Jugalbandi’s uninterrupted project photograph](https://github.com/Parthawe/parth-design-taste/blob/main/skills/parth-design-taste/references/images/jugalbandi-desktop-light.png) (V11) and [Mentra’s pairing of evidence with its explanation](https://github.com/Parthawe/parth-design-taste/blob/main/skills/parth-design-taste/references/images/mentra-decisions-desktop-light.png) (V07). DNA keeps its gallery palette, original artifacts, and separate labels for generated scenes.
+The two-color decision takes its cue from *The Matrix*. DNA keeps the meanings printed on the original boxes. [MoMA’s Items: Is Fashion Modern?](https://www.moma.org/calendar/exhibitions/1638) is a reference for treating familiar objects as the subject of an exhibition. Parth’s type specimen (V15) informs using bold type as a graphic construction; Mentra’s opening (V03) informs giving the artifact space and separating it from supporting text. The exhibit uses its own photography, typography, and graphics.

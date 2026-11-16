@@ -1,0 +1,49 @@
+/* Cover spread: one original photograph, two equivalent choices. */
+.edition-plate,.edition-credit{display:none}
+#simulation[data-scene=offer] .scene-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:0;min-height:0;padding:12px 0 48px}
+#simulation[data-scene=offer] .scene-copy{grid-column:1;grid-row:1;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(220px,1fr);gap:0 clamp(24px,6vw,104px);align-content:end;align-items:end;min-height:0;padding:0 0 18px;border-bottom:1px solid var(--dna-ink)}
+#simulation[data-scene=offer] h1{grid-row:1/3;font-size:clamp(3rem,6.5vw,6rem);line-height:.96;font-weight:700;text-wrap:initial}
+#simulation[data-scene=offer] .story{margin:0 0 8px;max-width:31ch;font-size:clamp(15px,1.45vw,20px);line-height:1.4}
+#simulation[data-scene=offer] .scene-wayfinding{align-self:start}
+#simulation[data-scene=offer] .fiction{margin:0;font-size:12px}
+#simulation[data-scene=offer] .scene-display{grid-column:1;grid-row:2;margin:0}
+#simulation[data-scene=offer] .condition{padding:13px 0 16px}
+#simulation[data-scene=offer] .condition p{font-size:13px;max-width:none}
+#simulation[data-scene=offer] .scene-decision{grid-column:1;grid-row:3;margin:0}
+#simulation[data-scene=offer] .edition-credit{grid-column:1;grid-row:4;display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--dna-line);margin-top:24px;padding-top:5px;font-size:12px;color:var(--dna-muted)}
+.edition-credit button{font-size:12px}
+#simulation[data-scene=offer] .dna-choice-group{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px clamp(10px,2.1vw,30px)}
+#simulation[data-scene=offer] .dna-choice[data-tone=neutral]{grid-column:1/-1;justify-self:start;min-height:44px;padding:10px 0;border:0;align-items:center;grid-template-columns:1fr 16px}
+#simulation[data-scene=offer] .dna-choice[data-tone=neutral] .dna-choice__title{font-size:14px;text-decoration:underline;text-underline-offset:4px}
+#simulation[data-scene=offer] .dna-choice[data-tone=neutral] .dna-choice__detail{display:none}
+#simulation[data-scene=offer] .dna-choice[data-tone=neutral] .dna-choice__mark{width:15px;height:15px}
+#simulation[data-scene=offer] .dna-choice:has(.edition-plate){padding:0 0 12px;gap:4px 8px;border:0;border-bottom:2px solid var(--dna-line);color:var(--dna-ink)}
+#simulation[data-scene=offer] .dna-choice:has(.edition-plate):is(:hover,:has(input:checked)){border-color:var(--choice-ink)}
+#simulation[data-scene=offer] .dna-choice:has(.edition-plate) .dna-choice__title{font-size:clamp(15px,2vw,26px);line-height:1.12}
+#simulation[data-scene=offer] .dna-choice:has(.edition-plate) .dna-choice__mark{grid-row:2/4;justify-self:end}
+.edition-plate{position:relative;grid-column:1/-1;height:clamp(210px,min(26vw,calc(100svh - 430px)),400px);margin-bottom:8px;isolation:isolate;overflow:hidden;color:#f5f4f0}
+#simulation[data-scene=offer] .edition-plate{display:block}
+.edition-plate[data-color=blue]{background:#213e7a}
+.edition-plate[data-color=red]{background:#882a38}
+.edition-index{position:absolute;top:16px;left:18px;font-size:11px;letter-spacing:.1em}
+.edition-pigment{position:absolute;bottom:7%;left:4%;font-weight:800;font-size:clamp(3.7rem,12.25vw,12.5rem);text-transform:uppercase;letter-spacing:-.04em;line-height:.76;color:rgb(255 255 255 / .22)}
+.edition-object{position:absolute;inset:5% 2% 3% auto;width:53%;height:92%;overflow:visible}
+.edition-mark{position:absolute;top:14px;right:16px;width:35px;height:16px}
+@media(max-width:700px){
+ #simulation[data-scene=offer] .scene-copy{display:block;padding-bottom:14px}
+ #simulation[data-scene=offer] h1{font-size:clamp(36px,11.3vw,65px)}
+ #simulation[data-scene=offer] .story{font-size:15px;margin:12px 0 5px;max-width:38ch}
+ #simulation[data-scene=offer] .condition p{font-size:12px}
+ #simulation[data-scene=offer] .dna-choice:has(.edition-plate){grid-template-columns:minmax(0,1fr) 15px;gap:6px}
+ #simulation[data-scene=offer] .dna-choice:has(.edition-plate) .dna-choice__mark{width:15px;height:15px}
+ #simulation[data-scene=offer] .dna-choice:has(.edition-plate) .dna-choice__title{min-height:2.24em}
+ .edition-plate{height:clamp(152px,43vw,260px);margin-bottom:5px}
+ .edition-index{top:10px;left:9px;font-size:9px}
+ .edition-mark{width:22px;right:8px;top:9px}
+ .edition-pigment{font-size:clamp(2.4rem,11vw,4.75rem);bottom:9%}
+ .edition-object{width:77%;height:76%;inset:16% 2% auto auto}
+ #simulation[data-scene=offer] .edition-credit{flex-wrap:wrap;gap:0 14px}
+}
+
+.matrix-dot[data-choice=extend]{background:var(--dna-life)}
+.matrix-dot[data-choice=accept]{background:var(--dna-end)}
